@@ -12,7 +12,7 @@ from io import open
 from os import path
 
 # Always prefer setuptools over distutils
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 here = path.abspath(path.dirname(__file__))
 
@@ -149,9 +149,9 @@ setup(
     install_requires=[
         "pipfile~=0.0",
         "colorama~=0.4",
-        "packaging~=21.0",
-        "requirementslib~=1.5",
-        "typing~=3.7",
+        "packaging~=24.1",
+        "requirementslib~=3.0.0",
+        "typing~=3.7.4",
     ],  # Optional
     entry_points={
         "console_scripts": ["pipenv-setup=pipenv_setup.main:cmd"]

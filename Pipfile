@@ -19,9 +19,12 @@ pipfile = "~=0.0"
 colorama = "~=0.4"
 packaging = "~=24.1"
 requirementslib = "~=3.0.0"
-typing = {version = "~=3.10"}
+typing = "~=3.7.4"
 
 [scripts]
 # use this to sync this pipfile to setup.py, explained in CONTRIBUTING.md
 # `$ pipenv run sync-deps`
 sync-deps = 'python -m pipenv_setup sync --dev --pipfile'
+
+[requires]
+python_version = "3.10"
