@@ -1,11 +1,12 @@
 import shutil
 from os.path import dirname
-from typing import Optional, List, Any
+from pathlib import Path
+from typing import Any, List, Optional
 
 import pytest
-from vistir.compat import Path
 
-from pipenv_setup import setup_parser, msg_formatter, main
+from pipenv_setup import main, msg_formatter, setup_parser
+from pipenv_setup import main, msg_formatter, setup_parser
 from pipenv_setup.main import cmd
 from tests.conftest import cwd, data
 
